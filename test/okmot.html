@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./okmot.css">
+    <title>Welcome to Ozgon site!</title>
+</head>
+<body>
+
+    <header>
+        <div class="container nav">
+            <span class="title">Узген</span>
+
+            <ul>
+                <a href="./index.html">
+                    <li>Главная</li>
+                </a>
+
+                <a href="./celo.html">
+                    <li>Сельское хозяйство</li>
+                </a>
+
+                <a href="./okmot.html">
+                    <li>Сельская управа</li>
+                </a>
+
+                <a href="./opros.html">
+                    <li>Вопросы</li>
+                </a>
+
+            </ul>
+            <button class="btn login-btn" onclick="handleAuth()">Войти</button>
+        </div>
+    </header>
+
+<main class="container">
+    <div class="page-header">
+        <h1>Сельская управа</h1>
+        <p class="subtitle">Сельская управа города Узгена — это орган местного самоуправления, который занимается решением вопросов на уровне айылного аймака: развитием инфраструктуры, социальными услугами, управлением земельными ресурсами и поддержкой местного населения. Она играет важную роль в обеспечении устойчивого развития региона и улучшении качества жизни жителей.</p>
+    </div>
+
+    <!-- БЛОК РУКОВОДСТВА -->
+    <h2 class="section-title">Руководство и специалисты</h2>
+    <div class="uprava">
+        
+        <!-- Карточка 1 -->
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="./images/5346314070056964869.jpg" alt="Бакытбек уулу Нурлан">
+            </div>
+            <div class="card-content">
+                <span class="card-badge badge-akim">Глава айыл окмоту (Аким)</span>
+                <span class="card-title">Бакытбек уулу Нурлан</span>
+                <span class="card-desc">Руководит деятельностью сельской управы, отвечает за принятие управленческих решений и комплексное развитие территории. Координирует работу всех отделов, активно взаимодействует с районной администрацией и контролирует исполнение местного бюджета.</span>
+            </div>
+        </div>
+
+        <!-- Карточка 2 -->
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="./images/5384363674958501153 (1).jpg" alt="Асанова Айгуль">
+            </div>
+            <div class="card-content">
+                <span class="card-badge badge-buh">Отдел социальной защиты</span>
+                <span class="card-title">Асанова Айгуль</span>
+                <span class="card-desc">Занимается социальной поддержкой населения, оказывает помощь в оформлении государственных пособий и курирует работу с малообеспеченными семьями. Организует культурно-массовые мероприятия и ведёт личный приём граждан по социальным вопросам.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ -->
+    <div class="info-sections">
+        <!-- Блок функций -->
+        <div class="info-block">
+            <h3>Основные функции управы</h3>
+            <ul class="functions-list">
+                <li>Развитие местной инфраструктуры и ремонт внутренних дорог</li>
+                <li>Организация системы питьевого водоснабжения и благоустройство территорий</li>
+                <li>Управление муниципальными земельными ресурсами и пастбищами</li>
+                <li>Регистрация населения, выдача справок и ведение учета граждан</li>
+                <li>Поддержка сельского хозяйства, фермерства и перерабатывающей промышленности</li>
+            </ul>
+        </div>
+
+        <!-- Блок графика приема -->
+        <div class="info-block schedule-block">
+            <h3>График приёма граждан</h3>
+            <p>Управа открыта для жителей и готова помочь в решении любых насущных проблем.</p>
+            <table class="schedule-table">
+                <tr>
+                    <td><b>Понедельник — Пятница:</b></td>
+                    <td>09:00 – 18:00</td>
+                </tr>
+                <tr>
+                    <td><b>Обед:</b></td>
+                    <td>12:00 – 13:00</td>
+                </tr>
+                <tr>
+                    <td><b>Личный прием главы:</b></td>
+                    <td>Среда с 14:00 до 17:00</td>
+                </tr>
+                <tr>
+                    <td><b>Выходные дни:</b></td>
+                    <td>Суббота, Воскресенье</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</main>
+
+
+
+        <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <h2>Авторизация</h2>
+
+            <input type="text" id="loginInput" class="input" placeholder="Логин">
+            <input type="password" id="passwordInput" class="input" placeholder="Пароль">
+
+            <button class="btn" onclick="login()">Войти</button>
+            <button class="btn close-btn" onclick="closeLogin()">Закрыть</button>
+
+            <p id="error" class="error"></p>
+        </div>
+    </div>
+
+     <script src="./index.js"></script>
+</body>
+</html>
