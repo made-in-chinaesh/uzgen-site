@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./celo.css">
+    <title>Welcome to Ozgon site!</title>
+</head>
+<body>
+
+    <header>
+        <div class="container nav">
+            <span class="title">Узген</span>
+
+            <ul>
+                <a href="./index.html">
+                    <li>Главная</li>
+                </a>
+
+                <a href="./celo.html">
+                    <li>Сельское хозяйство</li>
+                </a>
+
+                <a href="./okmot.html">
+                    <li>Сельская управа</li>
+                </a>
+
+                <a href="./opros.html">
+                    <li>Вопросы</li>
+                </a>
+
+            </ul>
+            <button class="btn login-btn" onclick="handleAuth()">Войти</button>
+        </div>
+    </header>
+
+<main class="container">
+    <div class="agriculture-header">
+        <h2 class="uzgenDesc">Узген — это настоящий <span>«зеленый бриллиант»</span> не только Кыргызстана, но и всей Центральной Азии. Его сельское хозяйство — это не просто работа в поле, а сочетание уникальной природы и многовековых традиций.</h2>
+    </div>
+
+    <div class="main-banner">
+        <img src="./UZGENCELO.png" alt="Сельское хозяйство Узгена">
+    </div>
+
+    <!-- БЛОК КУЛЬТУР -->
+    <div class="plants-section">
+        <h2 class="section-title">Основные сельскохозяйственные культуры</h2>
+        <div class="plants-grid">
+            <div class="plant-card">
+                <div class="plant-badge">01</div>
+                <h3>Узгенский рис (Девзира)</h3>
+                <p>Это база. Один участок обязательно должен быть под «королем риса». В Узгене он получается лучшим в мире благодаря уникальному составу горной воды и почвы.</p>
+            </div>
+            <div class="plant-card">
+                <div class="plant-badge">02</div>
+                <h3>Озимая пшеница</h3>
+                <p>Для обеспечения продовольственной безопасности и получения качественной муки. После сбора пшеницы в июле этот участок можно эффективно использовать под промежуточные культуры (например, репу).</p>
+            </div>
+            <div class="plant-card">
+                <div class="plant-badge">03</div>
+                <h3>Кукуруза (на зерно/силос)</h3>
+                <p>Узгенский климат отлично подходит для кукурузы. Она дает очень высокий выход биомассы и качественного зерна для сбалансированного корма скота.</p>
+            </div>
+            <div class="plant-card">
+                <div class="plant-badge">04</div>
+                <h3>Лук и Чеснок</h3>
+                <p>Высокодоходные культуры. Узгенский чеснок славится своей пикантной остротой и отличной лежкостью, его всегда легко реализовать на экспорт.</p>
+            </div>
+            <div class="plant-card">
+                <div class="plant-badge">05</div>
+                <h3>Картофель</h3>
+                <p>Рекомендуется выбирать средние или поздние сорта. В местной плодородной почве клубни получаются крахмалистыми, разваристыми и вкусными.</p>
+            </div>
+            <div class="plant-card">
+                <div class="plant-badge">06</div>
+                <h3>Бобовые (Маш / Фасоль)</h3>
+                <p>Настоящее «лекарство» для земли. Бобовые естественно насыщают почву азотом. Маш — отличный экспортный товар, не требующий сложного ухода.</p>
+            </div>
+            <div class="plant-card">
+                <div class="plant-badge">07</div>
+                <h3>Овощная грядка</h3>
+                <p>Интенсивный участок (томаты, огурцы, болгарский перец). Под щедрым узгенским солнцем помидоры набирают идеальную, сахаристую сладость.</p>
+            </div>
+            <div class="plant-card">
+                <div class="plant-badge">08</div>
+                <h3>Многолетние травы (Люцерна)</h3>
+                <p>Необходима при наличии скота и крайне важна для правильного севооборота. Она восстанавливает пористую структуру почвы на 3–4 года вперед.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- БЛОК РЕКОМЕНДАЦИЙ (СЕВООБОРОТ) -->
+    <div class="recommendations-section">
+        <h2 class="section-title">План севооборота на следующий год</h2>
+        <p class="recommendations-intro">Грамотное чередование культур позволяет земле отдыхать, снижает количество вредителей и увеличивает урожайность без химии.</p>
+        
+        <div class="recommendations-list">
+            <div class="rec-item">
+                <div class="rec-trend"><span>Вместо:</span> Рис → <span>Сажаем:</span> Маш / Фасоль</div>
+                <p>После риса почва нуждается в отдыхе и азоте. Бобовые — идеальный «реаниматор». К тому же, они очистят участок от специфических болотных сорняков.</p>
+            </div>
+            <div class="rec-item">
+                <div class="rec-trend"><span>Вместо:</span> Пшеница → <span>Сажаем:</span> Картофель</div>
+                <p>Пшеница оставляет после себя чистую от многих вредителей почву. Картофель на этом месте даст здоровые, крупные и чистые клубни.</p>
+            </div>
+            <div class="rec-item">
+                <div class="rec-trend"><span>Вместо:</span> Кукуруза → <span>Сажаем:</span> Озимая пшеница</div>
+                <p>Кукуруза сильно истощает запасы земли, а последующая посадка пшеницы поможет структуре почвы планомерно восстановиться.</p>
+            </div>
+            <div class="rec-item">
+                <div class="rec-trend"><span>Вместо:</span> Лук / Чеснок → <span>Сажаем:</span> Томаты и Перцы</div>
+                <p>Луковые — лучшие предшественники для пасленовых. Риск опасных заболеваний (вроде фитофторы) в следующем сезоне будет минимальным.</p>
+            </div>
+            <div class="rec-item">
+                <div class="rec-trend"><span>Вместо:</span> Картофель → <span>Сажаем:</span> Кукуруза</div>
+                <p>Картофель в процессе роста и копки отлично рыхлит землю, что обеспечит в будущем мощный и беспрепятственный рост корней кукурузы.</p>
+            </div>
+            <div class="rec-item">
+                <div class="rec-trend"><span>Вместо:</span> Маш → <span>Сажаем:</span> Узгенский рис</div>
+                <p>Теперь этот участок максимально полон природного азота благодаря прошлогоднему машу. Рис здесь вырастет особенно крупным и качественным.</p>
+            </div>
+            <div class="rec-item">
+                <div class="rec-trend"><span>Вместо:</span> Овощи → <span>Сажаем:</span> Лук и Чеснок</div>
+                <p>После прожорливых помидоров и огурцов почва по своему химическому составу идеально подходит для неприхотливых луковых культур.</p>
+            </div>
+            <div class="rec-item">
+                <div class="rec-trend"><span>Стабильно:</span> Люцерна (2-й год роста)</div>
+                <p>Люцерну обычно оставляют на одном месте от 3 до 5 лет. Она продолжает набирать зеленую массу и обогащать землю, так что тут просто косим сено.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- КАРТА -->
+    <h2 class="section-title">Агро-карта Узгенского района</h2>
+    <div class="mapContainer">
+        <iframe id="map_818318975" frameborder="0" width="100%" height="500px" src="https://makemap.2gis.ru/widget?data=eJy9kk1LAzEQhv_LeA1LPjfJXgVFECx4KCg9rM2owXSzpClYS_-7abe7l4oogrll3pnJ-8xkBzE5TOiuMa4wJ49raB53kLc9QgNX2OZNQiDQp9hjykd9Bw7Xy-T77GNXsoq8zim-4WUMMZXAhXRPmqspPvcuv0LDx_td3y593kLDCDz7EKa6WrlaWBiiUxatFIHUOr8pjzNVSW2N0dQaIZkQhsDHTefwvWh7Ai8DyPZg80Qxi77LpekyFljftfkIqUVVM8sMJ5JWmhpB1aLUeweNYJbuyX9OYSTgXxPc-g7vy3a6lzOMgcNYKk4cRvIFGenUCKcWE5xi9Q_gliMF5YY986JnnwMOoGfk0wboeH61Cl4ZTqU-IkirrZxWoWv5A7PfWTsH-aPZ079h42gZn0ZLrd4vCKzafhbXfvCwg9BmaIbkumb8UGy4lATCQR_61VRpXtCFFMVgjKtiz5S2BSaGMH9FDA_HaE4b3H8CCRgiug" sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
+    </div>
+</main>
+    
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <h2>Авторизация</h2>
+
+            <input type="text" id="loginInput" class="input" placeholder="Логин">
+            <input type="password" id="passwordInput" class="input" placeholder="Пароль">
+
+            <button class="btn" onclick="login()">Войти</button>
+            <button class="btn close-btn" onclick="closeLogin()">Закрыть</button>
+
+            <p id="error" class="error"></p>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,67 @@
+
+.task-form {
+    background: #ffffff;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    margin-bottom: 25px;
+}
+
+/* карточка задания */
+.task {
+    background: linear-gradient(145deg, #ffffff, #f7f9fc);
+    padding: 16px;
+    margin-top: 12px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    transition: all 0.2s ease;
+    border: 1px solid #eef2f7;
+}
+
+.task:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+/* заголовок */
+.task h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    color: #1f2937;
+}
+
+/* текст */
+.task p {
+    margin: 4px 0;
+    color: #4b5563;
+    font-size: 14px;
+}
+
+/* дедлайн выделяем */
+.task p strong {
+    color: #111827;
+}
+
+/* ссылка на файл */
+.task a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 10px;
+    background: #e8f0ff;
+    color: #2563eb;
+    border-radius: 8px;
+    font-size: 13px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.task a:hover {
+    background: #dbeafe;
+}
+
+/* разделитель */
+.task hr {
+    border: none;
+    border-top: 1px solid #eef2f7;
+    margin: 10px 0;
+}

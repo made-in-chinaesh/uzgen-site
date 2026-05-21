@@ -1,0 +1,214 @@
+/* Располагаем заголовок и кнопки управления в одну строку */
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+
+.question-title {
+    margin: 0; /* Убираем дефолтный отступ, так как теперь есть флекс */
+}
+
+/* Стили для кнопок управления */
+.question-actions {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0; /* Чтобы кнопки не сжимались на узких экранах */
+}
+
+/* Кастомизация кнопки удаления (сделаем её слегка тревожной) */
+.btn.delete-btn {
+    background: transparent;
+    color: #c0392b;
+    border: 1px solid #c0392b;
+}
+
+.btn.delete-btn:hover {
+    background: #c0392b;
+    color: white;
+}
+
+/* Кастомизация кнопки редактирования */
+.btn.edit-btn {
+    background: transparent;
+    color: #7f8c8d;
+    border: 1px solid #7f8c8d;
+}
+
+.btn.edit-btn:hover {
+    background: #7f8c8d;
+    color: white;
+}
+
+/* Форма вопроса */
+.question-form {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(88, 0, 21, 0.04); /* Едва заметная бордовая тень */
+    margin-bottom: 25px;
+}
+
+/* Универсальный input */
+.input {
+    box-sizing: border-box; /* Чтобы padding не раздувал ширину 100% */
+    padding: 12px 16px;
+    margin: 8px 0;
+    width: 100%;
+    border: 1px solid #e0d0d3; /* Нежно-серый бордюр с оттенком бордо */
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    transition: all 0.25s ease;
+}
+
+.input:focus {
+    border-color: #800020; /* Бордовый при фокусе */
+    box-shadow: 0 0 0 3px rgba(128, 0, 32, 0.15); /* Мягкое бордовое свечение вокруг */
+}
+
+/* Кнопки */
+/* Добавил селектор .btn, так как в HTML у тебя используется класс .btn */
+.button, .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background: #800020; /* Основной бордовый цвет */
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+    font-size: 15px;
+    text-align: center;
+}
+
+.button:hover, .btn:hover {
+    background: #580015; /* Темно-бордовый при наведении */
+}
+
+.button:active, .btn:active {
+    transform: scale(0.98); /* Легкий эффект нажатия */
+}
+
+/* Маленькая кнопка (например, "Добавить комментарий") */
+.button.small, .btn.small {
+    padding: 8px 14px;
+    font-size: 13px;
+    background: transparent;
+    color: #800020;
+    border: 1px solid #800020;
+    margin-top: 10px;
+}
+
+.button.small:hover, .btn.small:hover {
+    background: #800020;
+    color: white;
+}
+
+/* Список вопросов */
+.questions-list {
+    margin-top: 20px;
+}
+
+/* Карточка вопроса */
+.question {
+    background: white;
+    padding: 24px;
+    margin-top: 20px;
+    border-radius: 12px;
+    border-left: 4px solid #800020; /* Бордовая полоса слева для акцента */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.question-title {
+    color: #333;
+    margin: 0 0 12px;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Комментарии */
+.comments {
+    margin-top: 15px;
+    padding-left: 10px;
+    border-left: 1px dashed #e0d0d3; /* Пунктирная линия слева от ветки комментов */
+}
+
+/* Изменяем структуру комментария для выравнивания лайков */
+.comment {
+    background: #fdf5f6;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 8px;
+    font-size: 14px;
+    border: 1px solid #f5e6e8;
+    line-height: 1.5;
+    
+    /* Добавляем flex-контейнер */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Текстовая часть комментария */
+.comment-content {
+    flex-grow: 1;
+}
+
+/* Блок с кнопками реакций */
+.comment-reactions {
+    display: flex;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+/* Кнопки лайка/дизлайка */
+.reaction-btn {
+    background: transparent;
+    border: 1px solid #e0d0d3;
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-size: 13px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #555;
+    transition: all 0.2s ease;
+}
+
+/* Эффект наведения на лайк */
+.reaction-btn.like-btn:hover {
+    border-color: #2e7d32;
+    background-color: rgba(46, 125, 50, 0.05);
+    color: #2e7d32;
+}
+
+/* Эффект наведения на дизлайк */
+.reaction-btn.dislike-btn:hover {
+    border-color: #c62828;
+    background-color: rgba(198, 40, 40, 0.05);
+    color: #c62828;
+}
+
+/* Цифра счетчика */
+.reaction-count {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* Адаптивность для мобилок, чтобы на узких экранах лайки падали под текст */
+@media (max-width: 480px) {
+    .comment {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .comment-reactions {
+        align-self: flex-end;
+    }
+}
